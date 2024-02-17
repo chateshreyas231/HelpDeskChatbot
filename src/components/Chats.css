@@ -1,0 +1,76 @@
+.message-container {
+  overflow-y: scroll;
+  margin-bottom: 2em;
+}
+
+.message-container > div {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.message {
+  max-width: 400px;
+  padding: 1em;
+  border-radius: 17px;
+  overflow-wrap: break-word;
+}
+
+.user {
+  background: #e5dfdf;
+  color: #393e46;
+  align-self: flex-end;
+
+}
+
+.bot {
+  background: #393e46;
+  color: #f7f7f7;
+  align-self: flex-start;
+}
+
+.options {
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.options > div:first-child {
+  font-size: 1.3em;
+  margin: 0.7em 0.7em 0.9em 0.3em;
+  transform: rotate(90deg);
+}
+
+.options > div:first-child i {
+  color: #393e46;
+  animation: arrow-move 1.2s infinite;
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+.options p {
+  padding: 0.5em;
+  margin-right: 0.8em;
+  background: #393e46;
+  color: #f7f7f7;
+  border-radius: 17px;
+}
+
+.options p:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.dummy-div {
+  padding: 0.5em 0;
+}
